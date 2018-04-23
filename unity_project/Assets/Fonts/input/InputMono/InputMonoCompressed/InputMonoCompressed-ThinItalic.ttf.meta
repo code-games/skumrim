@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 90d939b4ffca69d45818e7783978fc0a
+timeCreated: 1522174111
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Input Mono Compressed
+  fontNames:
+  - Input Mono Compressed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 613231d344132784b842678db5ab1847, type: 3}
+  - {fileID: 12800000, guid: 68f662c41bdcf874bb004e02c7e6539b, type: 3}
+  - {fileID: 12800000, guid: 7a0602d4d89c71a4aa61d5672231bbc3, type: 3}
+  - {fileID: 12800000, guid: 43e6270940035794297d6de8d3a82f8b, type: 3}
+  - {fileID: 12800000, guid: 27de614a2c3ec464697d4dd188009a0e, type: 3}
+  - {fileID: 12800000, guid: 847a27ceadf8aba47a0b705ec68b575b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
