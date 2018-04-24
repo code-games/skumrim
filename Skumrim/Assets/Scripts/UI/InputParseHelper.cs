@@ -59,7 +59,6 @@ public static class InputParseHelper
         }
         else
         {
-
             number = defaultNumber;
             text = InputParseHelper.JoinArguments(arguments);
         }

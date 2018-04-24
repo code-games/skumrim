@@ -56,6 +56,11 @@ public class Place : ScriptableObject
             instance.Init(this);
             npcs.Add(instance);
         }
+
+        foreach (InteractableObject obj in interactables)
+        {
+            obj.Init();
+        }
     }
 
     public virtual void OnPlayerEnter() { this.Describe(); }

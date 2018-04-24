@@ -5,7 +5,7 @@ public class Unit : MonoBehaviour
     public StartingStats startingStats;
     public Stats stats;
 
-    public EntityLevelingController levelingController;
+    public UnitLevelingController levelingController;
 
     [HideInInspector]
     public EquipController equipments;
@@ -15,7 +15,7 @@ public class Unit : MonoBehaviour
     public virtual void Awake()
     {
         stats = new Stats(this, startingStats);
-        levelingController = new EntityLevelingController();
+        levelingController = new UnitLevelingController();
         equipments = GetComponent<EquipController>();
     }
 

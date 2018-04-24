@@ -147,7 +147,6 @@
     <Compile Include="Assets\Scripts\UI\SidePanelController.cs" />
     <Compile Include="Assets\Scripts\UI\UISkin.cs" />
     <Compile Include="Assets\Scripts\UI\UISkinController.cs" />
-    <Compile Include="Assets\Scripts\Units\EntityLevelingController.cs" />
     <Compile Include="Assets\Scripts\Units\LevelingController.cs" />
     <Compile Include="Assets\Scripts\Units\NPC.cs" />
     <Compile Include="Assets\Scripts\Units\Player.cs" />
@@ -155,6 +154,7 @@
     <Compile Include="Assets\Scripts\Units\Stats\StartingStats.cs" />
     <Compile Include="Assets\Scripts\Units\Stats\Stats.cs" />
     <Compile Include="Assets\Scripts\Units\Unit.cs" />
+    <Compile Include="Assets\Scripts\Units\UnitLevelingController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

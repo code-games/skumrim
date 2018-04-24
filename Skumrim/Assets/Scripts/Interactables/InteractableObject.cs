@@ -5,6 +5,8 @@ public class InteractableObject : ScriptableObject
     public new string name;
     public string description;
 
+    public virtual void Init() { }
+
     public virtual void Describe()
     {
         IOController.io.Log("[" + name + " - " + description + "]");
