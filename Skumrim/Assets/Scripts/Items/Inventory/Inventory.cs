@@ -3,10 +3,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+[System.Serializable]
+public class Inventory
 {
-    private Unit owner;
-    private EquipController equips;
+    public Unit owner { get; private set; }
+    public EquipController equips { get; private set; }
 
     private int encumbrance;
     private int carryingCapacity;
@@ -20,23 +21,22 @@ public class Inventory : MonoBehaviour
     {
         foreach (StartingItem i in startingInventory.items)
         {
-            items.Add(this.getNewItemStackForItemAndAmmount(Instantiate(i.item), i.ammount));
+            items.Add(this.getNewItemStackForItemAndAmmount(GameObject.Instantiate(i.item), i.ammount));
         }
 
         this.gold = startingInventory.gold;
     }
 
-    private void Awake()
+    public void Init(Unit owner = null, EquipController equips = null)
     {
-        owner = GetComponent<Unit>();
-        equips = GetComponent<EquipController>();
+        this.owner = owner;
+        this.equips = equips;
 
         encumbrance = 0;
-        if(owner)
+        if (owner)
             carryingCapacity = owner.stats.carryingCapacity;
 
         items = new List<ItemStack>();
-
         loadStartingItems();
     }
 
@@ -57,13 +57,7 @@ public class Inventory : MonoBehaviour
     {
         if (string.IsNullOrEmpty(itemName)) return null;
 
-        foreach (ItemStack itemStack in items)
-        {
-            if (itemStack.item.name.ToLower() == itemName.ToLower())
-                return itemStack;
-        }
-
-        return null;
+        return items.Find(stack => stack.item.name.ToLower() == itemName.ToLower());
     }
 
     public List<ItemStack> getItems()

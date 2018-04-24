@@ -9,7 +9,7 @@ public class Unit : MonoBehaviour
 
     [HideInInspector]
     public EquipController equipments;
-    [HideInInspector]
+
     public Inventory inventory;
 
     public virtual void Awake()
@@ -17,7 +17,6 @@ public class Unit : MonoBehaviour
         stats = new Stats(this, startingStats);
         levelingController = new EntityLevelingController();
         equipments = GetComponent<EquipController>();
-        inventory = GetComponent<Inventory>();
     }
 
     public virtual void Start()
@@ -26,6 +25,9 @@ public class Unit : MonoBehaviour
 
     public virtual void Init()
     {
+        Debug.Log(name + ".Init()");
+
+        inventory.Init(this, equipments);
     }
 
     public void Die()

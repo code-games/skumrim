@@ -3,7 +3,6 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Unit))]
-[RequireComponent(typeof(Inventory))]
 public class EquipController : MonoBehaviour
 {
     private Unit owner;
@@ -24,7 +23,11 @@ public class EquipController : MonoBehaviour
     private void Awake()
     {
         owner = GetComponent<Unit>();
-        inventory = GetComponent<Inventory>();
+    }
+
+    private void Start()
+    {
+        inventory = owner.inventory;
     }
 
     private void showSlot(string slotName, Equipment slot)

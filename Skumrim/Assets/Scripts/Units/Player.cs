@@ -14,6 +14,6 @@ public class Player : Unit
 
     public override void Init()
     {
-       
+        base.Init();
     }
 }
