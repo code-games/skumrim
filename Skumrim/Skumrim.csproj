@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Actions\ACT_Interact.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Inventory.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Look.cs" />
+    <Compile Include="Assets\Scripts\Actions\ACT_Masturbate.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Quit.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Settings.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Shop.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Assets\Scripts\Items\ItemFactory\ItemLibraryConsumables.cs" />
     <Compile Include="Assets\Scripts\Items\ItemFactory\ItemLibraryEquipment.cs" />
     <Compile Include="Assets\Scripts\Managers\ActionManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\AmbientSounds.cs" />
     <Compile Include="Assets\Scripts\Managers\CraftingManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameModules\ExclusiveGameModule.cs" />
@@ -138,6 +140,7 @@
     <Compile Include="Assets\Scripts\Managers\Menus\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\NavigationManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Sound.cs" />
     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Managers\StorageManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TimeManager.cs" />

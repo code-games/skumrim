@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
     public static ActionManager Actions;
     public static TimeManager GameTime;
 
+    public static SoundManager Sound;
+
     #endregion
 
     #region MonoBehaviour
@@ -21,6 +23,8 @@ public class GameManager : MonoBehaviour {
         Navigation = GetComponent<NavigationManager>();
         Actions = GetComponent<ActionManager>();
         GameTime = GetComponent<TimeManager>();
+
+        Sound = GetComponentInChildren<SoundManager>();
     }
 
     void OnDestroy()
@@ -43,6 +47,8 @@ public class GameManager : MonoBehaviour {
         IOController.io.LogLine();
         Actions.ActivateModule();
         Navigation.StartGame();
+
+        Sound.StartGame();
 
         Player.player.Init();
     }
