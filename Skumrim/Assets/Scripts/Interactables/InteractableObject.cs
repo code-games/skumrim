@@ -12,9 +12,10 @@ public class InteractableObject : ScriptableObject
         IOController.io.Log("[" + name + " - " + description + "]");
     }
 
-    public virtual void Interact()
+    public virtual bool Interact()
     {
         IOController.io.Log("Interacting with: " + name);
+        return true;
     }
 
     public virtual void Look()

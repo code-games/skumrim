@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
 
     public void StartGame()
     {
-        getSoundByName("Rain").Play();
+        //getSoundByName("Rain").Play();
     }
 
     public Sound getSoundByName(string name)

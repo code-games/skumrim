@@ -6,8 +6,12 @@ public class CraftingStation : InteractableObject
 {
     public List<Recipe> recipes;
 
-    public override void Interact()
+    public override bool Interact()
     {
+        bool ret = base.Interact();
+
         CraftingManager.craftingManager.StartCrafting(recipes);
+
+        return ret;
     }
 }

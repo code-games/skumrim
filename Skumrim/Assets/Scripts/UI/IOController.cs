@@ -19,6 +19,8 @@ public class IOController : MonoBehaviour
 
     public int maxLogHistory;
     private List<string> gameLogs;
+    public int maxInputHistory;
+    private List<string> inputs;
 
     public PlayerInputEvent playerInputEvent;
     public PlayerActionInputEvent playerActionInputEvent;
@@ -44,6 +46,7 @@ public class IOController : MonoBehaviour
         io = this;
 
         gameLogs = new List<string>();
+        inputs = new List<string>();
 
         inputField.onEndEdit.AddListener(inputFieldEndEditing);
 
@@ -101,6 +104,13 @@ public class IOController : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(input))
         {
+            inputs.Insert(0, input);
+
+            if (inputs.Count > maxInputHistory)
+            {
+                inputs.RemoveAt(inputs.Count-1);
+            }
+
             if (nextInputIsGrabbed)
             {
                 nextInputIsGrabbed = false;

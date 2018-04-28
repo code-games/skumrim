@@ -12,9 +12,11 @@ public class Sign : InteractableObject
         IOController.io.Log("\"" + sayings + "\"");
     }
 
-    public override void Interact()
+    public override bool Interact()
     {
-        base.Interact();
+        bool ret = base.Interact();
         IOController.io.Log("The sign reads: '" + sayings + "'");
+
+        return ret;
     }
 }

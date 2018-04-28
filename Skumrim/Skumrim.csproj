@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Actions\ACT_Hunt.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Interact.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Inventory.cs" />
+    <Compile Include="Assets\Scripts\Actions\ACT_Lockpick.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Look.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Masturbate.cs" />
     <Compile Include="Assets\Scripts\Actions\ACT_Quit.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets\Scripts\Actions\Action.cs" />
     <Compile Include="Assets\Scripts\Interactables\CraftingStation.cs" />
     <Compile Include="Assets\Scripts\Interactables\InteractableObject.cs" />
+    <Compile Include="Assets\Scripts\Interactables\LockableObject.cs" />
     <Compile Include="Assets\Scripts\Interactables\Sign.cs" />
     <Compile Include="Assets\Scripts\Interactables\StorageObject.cs" />
     <Compile Include="Assets\Scripts\Items\Consumables\BuffConsumable.cs" />
